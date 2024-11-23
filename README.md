@@ -44,11 +44,11 @@ This project focuses on using machile learning skills to accomplish music genre 
 
 -Model Training example
 
-# Define the model architecture
+Define the model architecture
 model = create_model((224, 224, 3), num_classes)
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
-# Fit the model with data augmentation
+Fit the model with data augmentation
 history = model.fit(train_data, validation_data=val_data, epochs=40, callbacks=callbacks)
 
 -Spectragram Generation example 
